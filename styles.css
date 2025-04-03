@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(102, 163, 163);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+section{
+    margin: 20px;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+header{
+    
+    background-color: bisque;
+    color: rgba(66, 131, 161, 0.685);
+    text-align: right;
+    padding: 20px;
+    
+}
+.logo{
+    width: 50%;
+    max-width: 50px;
+    border-radius: 15px;
+    margin-left: 25px;
+}
+video{
+    max-width: fit-content;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgb(15, 15, 15);
+}
+nav a{
+    margin:0 15px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+nav a:hover{
+    text-decoration: underline;
+    color: rgb(15, 15, 15);
+}
+main{
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(30, 63, 65);
+}
+h2{
+    color: rgba(22, 22, 131, 0.712);
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(15, 15, 15);
+}
+.about-container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(15, 15, 15);
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.about-container img{
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgb(15, 15, 15);
+}
+.contact-container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(15, 15, 15);
+    margin-left: 20px;
+    display: inline;
+}
+footer{
+text-align: center;
+color: antiquewhite;
+padding: 10px;
+}
+.media-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+@media(max-width:600px){
+    .media-container{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        background-color: azure;
+    }
+    .about-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+}
